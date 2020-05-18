@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-
 class Landing extends Component {
   state = {};
 
@@ -12,7 +11,7 @@ class Landing extends Component {
     return (
       <div className="container">
         <div className="row">
-          <button className="col-12 col-md-5 col-lg-3 col-xl-3" onClick={this.passToAdult}>
+          <button className="col-12 col-md-5 col-lg-3 col-xl-3 btn-primary" onClick={this.passToAdult}>
             ?האם הילד דיווח
           </button>
           <button className="col-12 col-md-5 col-lg-3 col-xl-3">

@@ -1,10 +1,10 @@
 import React, { Component } from "react";
 
-class adultAbuse extends Component {
+class AdultAbuse extends Component {
   state = {};
   render() {
-    return <div></div>;
+    return <div>HELLO</div>;
   }
 }
 
-export default adultAbuse;
+export default AdultAbuse;
