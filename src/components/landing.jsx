@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import "../styles/landing.scss";
 import QueHeader from "./que_header";
+import QueOption from "./que_option";
 class Landing extends Component {
   state = {};
 
@@ -12,19 +14,11 @@ class Landing extends Component {
     return (
       <>
         <QueHeader question="למה נכנסת לאפליקציה?" multipleAnswers={true} />
-        <div className="container">
-          <div className="row">
-            <button className="col-12 col-md-5 col-lg-3 col-xl-3 btn-primary" onClick={this.passToAdult}>
-              ?האם הילד דיווח
-            </button>
-            <button className="col-12 col-md-5 col-lg-3 col-xl-3">
-              האם ילד אחר דיווח על התעללות בילד ?
-            </button>
-            <button className="col-12 col-md-5 col-lg-3 col-xl-3">
-              האם ראית סימנים מעידים להתעללות בעצמך ?
-            </button>
-          </div>
-        </div>
+        <form className="Options_container">
+          <QueOption optionText="ילד/ה שיתף/ה אותי במידע על פגיעה שחווה/תה "/>
+          <QueOption optionText="ראיתי משהו שהדאיג אותי לגבי ילד/ה "/>
+          <QueOption optionText="שיתפו אותי במידע לגבי ילד/ה אחר/ת שייתכן ועבר/ה פגיעה "/>
+        </form>
       </>
     );
   }
