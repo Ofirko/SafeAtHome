@@ -1,15 +1,57 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import "../css/landing.css";
+import humans from "../images/humaaans-copy.jpg";
+import button from "../images/button-arrow.png";
+import NextButton from "./nextButton";
 class Landing extends Component {
   state = {};
 
-  passToAdult=()=>{
+  passToFirstPage = () => {
     this.props.history.push("/questionnaire/step2");
-  }
+  };
 
   render() {
     return (
-      <div className="container">
+      <div
+        className="container"
+        style={{
+          height: "100vh",
+          direction: "rtl",
+          margin: "auto",
+          width: "50%",
+        }}
+      >
+        <div className="row">
+          <div className="col-12">
+            <div
+              className="humaaans-copy"
+              style={{ margin: "auto", width: "100%" }}
+            >
+              <img src={humans} alt="humans report" />
+            </div>
+            <div className="rectangle-5">
+              <div className="text">
+                <p className="mainText">
+                  ביקשת להתייעץ. <br />
+                  אנחנו נשאל כמה שאלות קצרות ובעזרת התשובות שלך נוכל לכוון אותך,
+                  מה נכון לעשות.
+                </p>
+                <p className="saveLife">הדיווח שלך יכול להציל חיים</p>
+
+                <img
+                  className="btn-arrow"
+                  src={button}
+                  alt=""
+                  onClick={this.passToFirstPage}
+                />
+                <NextButton></NextButton>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      /*    <div className="container">
         <div className="row">
           <button className="col-12 col-md-5 col-lg-3 col-xl-3 btn-primary" onClick={this.passToAdult}>
             ?האם הילד דיווח
@@ -21,7 +63,7 @@ class Landing extends Component {
             האם ראית סימנים מעידים להתעללות בעצמך ?
           </button>
         </div>
-      </div>
+      </div>  */
     );
   }
 }
