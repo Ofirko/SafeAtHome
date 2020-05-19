@@ -8,7 +8,7 @@ class Landing extends Component {
   state = {};
 
   passToFirstPage = () => {
-    this.props.history.push("/questionnaire/step2");
+    this.props.history.push("/questionnaire/step1");
   };
 
   render() {

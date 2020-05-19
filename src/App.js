@@ -4,6 +4,8 @@ import "./App.css";
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Landing from "./components/landing";
 import AdultAbuse from "./components/adultAbuse";
+import NextButton from "./components/nextButton";
+import FilterQuestion from "./components/filterquestion";
 import Result from "./components/result";
 import DecideReport from "./components/decideReport";
 import AfterReport from "./components/afterReport";
@@ -14,9 +16,14 @@ function App() {
     <div className="App">
       <header className="App-header"></header>
       <body>
+<<<<<<< HEAD
+=======
+        <img src={logo} alt="logo" className="logo" />
+>>>>>>> 27f4cfa819d71b04f1a5745edac5f4f5c9840cf7
         <Router>
           <Switch>
             <Route path="/questionnaire" exact component={Landing} />
+            <Route path="/questionnaire/step1" component={FilterQuestion} />
             <Route path="/questionnaire/step2" component={AdultAbuse} />
             <Route path="/questionnaire/end-questionnaire" component={Result} />
             <Route
@@ -28,6 +35,7 @@ function App() {
               component={AfterReport}
             />
             <Route path="/questionnaire/answer" component={AnswerFromSystem} />
+<<<<<<< HEAD
           </Switch>
         </Router>
         <img src={logo} alt="logo" className="logo" />
@@ -37,6 +45,10 @@ function App() {
             <Route path="/questionnaire/step2" component={AdultAbuse} />
           </Switch>
         </Router>
+=======
+        </Switch>
+      </Router>
+>>>>>>> 27f4cfa819d71b04f1a5745edac5f4f5c9840cf7
       </body>
       <footer></footer>
     </div>
