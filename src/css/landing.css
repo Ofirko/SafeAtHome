@@ -6,25 +6,28 @@ body {
 }
 
 .container {
-    opacity: 0.8;
     background-color: #ffffff;
+    height: 100vh;
+    direction: rtl;
+    margin: 30px;
+    width: 85%;
 }
 
 .humaaans-copy {
-    width: 240px;
-    height: 211px;
-    object-fit: contain;
     position: relative;
-    left: 20px;
     top: 20px;
     display: flex;
     justify-content: center;
 }
 
+.humaaans-copy img {
+    height: 100%;
+    width: 240px;
+}
+
 .rectangle-5 {
     border-radius: 4px;
     box-shadow: 0 11px 26px -10px rgba(174, 180, 192, 0.09);
-
 
     text-align: center;
     height: 100%;
@@ -36,22 +39,30 @@ body {
 }
 
 .saveLife {
+    opacity: 0.8;
     color: #ff2e55;
     font-weight: bold;
-    font-size: 1em;
+    font-size: 20px;
+    line-height: 26px;
     padding: 5%;
 
 }
 
 .mainText {
+    opacity: 0.8;
     padding: 10%;
+    padding-bottom: 0;
+    font-size: 16px;
+    line-height: 1.25;
 }
 
 .rectangle-5 .text {
+    height: 278px;
     line-height: 1.5;
     vertical-align: middle;
-    background-image: linear-gradient(228deg, #deedf0 98%, #f9fbff 2%);
+    background-image: linear-gradient(239deg, #deedf0 50%, #f9fbff 85%);
     border: solid 1px #e5eced;
+    border-radius: 4px;
     width: 100%;
 }
 
