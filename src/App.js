@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       <header className="App-header"></header>
       <body>
+<<<<<<< HEAD
         <Router>
           <Switch>
             <Route path="/questionnaire" exact component={Landing} />
@@ -30,6 +31,15 @@ function App() {
             <Route path="/questionnaire/answer" component={AnswerFromSystem} />
           </Switch>
         </Router>
+=======
+        <img src={logo} alt="logo" className="logo" />
+      <Router>
+        <Switch>
+        <Route path="/questionnaire" exact component={Landing} />
+        <Route path="/questionnaire/step2" component={AdultAbuse} />
+        </Switch>
+      </Router>
+>>>>>>> 7b10c0a5998b9380f23f02c9a09884c6fccd035e
       </body>
       <footer></footer>
     </div>

@@ -1,0 +1,18 @@
+
+@mixin MainGradient {
+    background-image: linear-gradient(239deg, #deedf0 50%, #f9fbff 85%);
+    box-shadow: 0 11px 26px -10px rgba(174, 180, 192, 0.09);
+
+}
+
+
+.QueHeader__wrapper {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    padding-top: 40px;
+    width: 100%;
+    height: 200px;
+    border: solid 1px #e5eced;
+    @include MainGradient
+}
