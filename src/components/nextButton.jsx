@@ -7,10 +7,12 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 
 class NextButton extends Component {
-  state = {};
+  state = {
+    isChose: false,
+    matchClass: "",
+  };
 
   passNextComponent = (routing) => {
-    console.log(routing);
     this.props.history.push(routing);
   };
 
@@ -19,7 +21,9 @@ class NextButton extends Component {
     return (
       <div className="row">
         <div className="col col-md-6">
-          <button className="btn btn-quest">
+          <button
+            className={this.state.isChose ? "btn btn-quest" : "btn btn-false"}
+          >
             <span
               className="arrow-left"
               onClick={() => this.passNextComponent(routingNext)}

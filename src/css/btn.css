@@ -6,8 +6,17 @@
   height: 59px;
 }
 
+.btn-false {
+  border-radius: 8px;
+  box-shadow: 0 11px 26px -10px rgba(38, 215, 200, 0.46);
+  width: 80%;
+  height: 59px;
+  background-color: #c4c4da;
+  pointer-events: none;
+
+}
+
 .arrow-left {
-  box-shadow: 0 11px 26px -10px rgba(234, 235, 238, 0.54);
   color: #ffffff;
   font-size: 3em;
   position: relative;
