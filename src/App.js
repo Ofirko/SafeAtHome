@@ -5,6 +5,7 @@ import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import Landing from "./components/landing";
 import AdultAbuse from "./components/adultAbuse";
 import NextButton from "./components/nextButton";
+import FilterQuestion from "./components/filterquestion";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       <Router>
         <Switch>
         <Route path="/questionnaire" exact component={Landing} />
+        <Route path="/questionnaire/step1" component={FilterQuestion} />
         <Route path="/questionnaire/step2" component={AdultAbuse} />
         </Switch>
       </Router>

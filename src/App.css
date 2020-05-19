@@ -1,5 +1,5 @@
 .logo {
-    position: sticky;
+    position: absolute;
     top: 10px;
     left: 8px;
 }
