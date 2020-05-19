@@ -1,0 +1,36 @@
+.ProgressBar {
+    &_container {
+        margin-top: auto;
+    }
+    &_text {
+        &_markers {
+            display: flex;
+            justify-content: space-between;
+            color: #9aa2b1;
+        }
+    }
+    
+    &_indicator {
+        &_container {
+            height: 7px;
+            width: 100%;
+        }
+        &_oval {
+            position: relative;
+            top: -15px;
+            height: 11px;
+            width: 11px;
+            border-radius: 100px;
+            background-color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            &Iris {
+                height: 3px;
+                width: 3px;
+                border-radius: 100px;
+                background-color: #312fd8;
+            }
+        }
+    }
+}

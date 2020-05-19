@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
+import QueHeader from "./que_header";
 class Landing extends Component {
   state = {};
 
@@ -9,19 +10,22 @@ class Landing extends Component {
 
   render() {
     return (
-      <div className="container">
-        <div className="row">
-          <button className="col-12 col-md-5 col-lg-3 col-xl-3 btn-primary" onClick={this.passToAdult}>
-            ?האם הילד דיווח
-          </button>
-          <button className="col-12 col-md-5 col-lg-3 col-xl-3">
-            האם ילד אחר דיווח על התעללות בילד ?
-          </button>
-          <button className="col-12 col-md-5 col-lg-3 col-xl-3">
-            האם ראית סימנים מעידים להתעללות בעצמך ?
-          </button>
+      <>
+        <QueHeader question="למה נכנסת לאפליקציה?" multipleAnswers={true} />
+        <div className="container">
+          <div className="row">
+            <button className="col-12 col-md-5 col-lg-3 col-xl-3 btn-primary" onClick={this.passToAdult}>
+              ?האם הילד דיווח
+            </button>
+            <button className="col-12 col-md-5 col-lg-3 col-xl-3">
+              האם ילד אחר דיווח על התעללות בילד ?
+            </button>
+            <button className="col-12 col-md-5 col-lg-3 col-xl-3">
+              האם ראית סימנים מעידים להתעללות בעצמך ?
+            </button>
+          </div>
         </div>
-      </div>
+      </>
     );
   }
 }
