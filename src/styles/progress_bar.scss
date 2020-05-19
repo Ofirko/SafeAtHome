@@ -1,12 +1,15 @@
 .ProgressBar {
     &_container {
         margin-top: auto;
+        display: flex;
+        flex-direction: column;
     }
     &_text {
         &_markers {
             display: flex;
             justify-content: space-between;
             color: #9aa2b1;
+            font-size: 12px;
         }
     }
     
@@ -14,10 +17,11 @@
         &_container {
             height: 7px;
             width: 100%;
+            position: relative;
+            top: 9px;
         }
         &_oval {
             position: relative;
-            top: -15px;
             height: 11px;
             width: 11px;
             border-radius: 100px;

@@ -5,6 +5,7 @@ import "../styles/progress_bar.scss";
 class ProgressBar extends Component {
     constructor(props) {
         super(props);
+        
     }
 
     render() {
@@ -16,13 +17,13 @@ class ProgressBar extends Component {
                             שאלות
                         </span>
                         <span>
-                            1 מתוך 15
+                            {this.props.pageNum} מתוך 15
                         </span>
                     </label>
                 </div>
-                <progress className = "ProgressBar_indicator_container" value="32" max="100">
+                <progress className = "ProgressBar_indicator_container" value={this.props.pageNum} max="15">
                 </progress>
-                <div className = "ProgressBar_indicator_oval"  style={{right:32 - 2 + "%"}}>
+                <div className = "ProgressBar_indicator_oval"  style={{right:this.props.pageNum * 6.67 - 2 + "%"}}>
                     <div className = "ProgressBar_indicator_ovalIris"></div>
                 </div>
             </div>
