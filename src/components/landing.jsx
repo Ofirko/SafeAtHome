@@ -1,25 +1,69 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
-import "../styles/landing.scss";
-import QueHeader from "./que_header";
-import QueOption from "./que_option";
+import "../css/landing.css";
+import humans from "../images/humaaans-copy.png";
+import button from "../images/button-arrow.png";
+
 class Landing extends Component {
   state = {};
 
-  passToAdult=()=>{
+  passToFirstPage = () => {
     this.props.history.push("/questionnaire/step2");
-  }
+  };
 
   render() {
     return (
-      <>
-        <QueHeader question="למה נכנסת לאפליקציה?" multipleAnswers={true} />
-        <form className="Options_container">
-          <QueOption optionText="ילד/ה שיתף/ה אותי במידע על פגיעה שחווה/תה "/>
-          <QueOption optionText="ראיתי משהו שהדאיג אותי לגבי ילד/ה "/>
-          <QueOption optionText="שיתפו אותי במידע לגבי ילד/ה אחר/ת שייתכן ועבר/ה פגיעה "/>
-        </form>
-      </>
+      <div
+        className="container"
+        style={{
+          height: "100vh",
+          direction: "rtl",
+          margin: "auto",
+          width: "50%",
+        }}
+      >
+        <div className="row">
+          <div className="col-12">
+            <div
+              className="humaaans-copy"
+              style={{ margin: "auto", width: "100%" }}
+            >
+              <img src={humans} alt="humans report" />
+            </div>
+            <div className="rectangle-5">
+              <div className="text">
+                <p className="mainText">
+                  ביקשת להתייעץ. <br />
+                  אנחנו נשאל כמה שאלות קצרות ובעזרת התשובות שלך נוכל לכוון אותך,
+                  מה נכון לעשות.
+                </p>
+                <p className="saveLife">הדיווח שלך יכול להציל חיים</p>
+
+                <img
+                  className="btn-arrow"
+                  src={button}
+                  alt=""
+                  onClick={this.passToFirstPage}
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      /*    <div className="container">
+        <div className="row">
+          <button className="col-12 col-md-5 col-lg-3 col-xl-3 btn-primary" onClick={this.passToAdult}>
+            ?האם הילד דיווח
+          </button>
+          <button className="col-12 col-md-5 col-lg-3 col-xl-3">
+            האם ילד אחר דיווח על התעללות בילד ?
+          </button>
+          <button className="col-12 col-md-5 col-lg-3 col-xl-3">
+            האם ראית סימנים מעידים להתעללות בעצמך ?
+          </button>
+        </div>
+      </div>  */
     );
   }
 }
