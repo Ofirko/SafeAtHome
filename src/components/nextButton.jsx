@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import "../css/btn.css";
-import { Redirect, BrowserRouter } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
   faArrowRight,
