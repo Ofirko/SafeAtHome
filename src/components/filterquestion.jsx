@@ -7,19 +7,15 @@ import NextButton from "./nextButton";
 class FilterQuestion extends Component {
   state = {};
 
-  passToAdult=()=>{
-    this.props.history.push("/questionnaire/step2");
-  }
-
   render() {
     return (
       <>
-        <QueHeader question="למה נכנסת לאפליקציה?" multipleAnswers={true} />
+        <QueHeader question="למה נכנסת לאפליקציה?" multipleAnswers={false} pageNum = {1} />
         <form className="Options_container">
           <QueOption optionText="ילד/ה שיתף/ה אותי במידע על פגיעה שחווה/תה "/>
           <QueOption optionText="ראיתי משהו שהדאיג אותי לגבי ילד/ה "/>
           <QueOption optionText="שיתפו אותי במידע לגבי ילד/ה אחר/ת שייתכן ועבר/ה פגיעה "/>
-          <NextButton />
+          <NextButton history={this.props.history} routingNext="/questionnaire/step2" routingPrevious="/questionnaire" />
         </form>
       </>
     );
