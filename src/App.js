@@ -16,6 +16,7 @@ function App() {
       <header className="App-header">
       </header>
       <body>
+        <img src={logo} alt="logo" className="logo" />
       <Router>
         <Switch>
         <Route path="/questionnaire" exact component={Landing} />
