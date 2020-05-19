@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../css/landing.css";
-import humans from "../images/humaaans-copy.jpg";
+import humans from "../images/humaaans-copy.png";
 import button from "../images/button-arrow.png";
-import NextButton from "./nextButton";
+
 class Landing extends Component {
   state = {};
 
@@ -45,12 +45,12 @@ class Landing extends Component {
                   alt=""
                   onClick={this.passToFirstPage}
                 />
-                <NextButton></NextButton>
               </div>
             </div>
           </div>
         </div>
       </div>
+
       /*    <div className="container">
         <div className="row">
           <button className="col-12 col-md-5 col-lg-3 col-xl-3 btn-primary" onClick={this.passToAdult}>

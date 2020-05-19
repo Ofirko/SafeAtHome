@@ -15,7 +15,7 @@ body {
     object-fit: contain;
     position: relative;
     left: 20px;
-
+    top: 20px;
     display: flex;
     justify-content: center;
 }
