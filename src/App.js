@@ -11,14 +11,6 @@ function App() {
     <div className="App">
       <header className="App-header"></header>
       <body>
-<<<<<<< HEAD
-        <Router>
-          <Switch>
-            <Route path="/questionnaire" exact component={Landing} />
-            <Route path="/questionnaire/step2" component={AdultAbuse} />
-          </Switch>
-        </Router>
-=======
         <img src={logo} alt="logo" className="logo" />
       <Router>
         <Switch>
@@ -26,7 +18,6 @@ function App() {
         <Route path="/questionnaire/step2" component={AdultAbuse} />
         </Switch>
       </Router>
->>>>>>> 63b9e94b2f443ab4682421b6cb656fb64ba85431
       </body>
       <footer></footer>
     </div>
