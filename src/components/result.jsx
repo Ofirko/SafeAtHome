@@ -24,29 +24,30 @@ class Result extends Component {
           />
         </div>
         <div className="rectangle-5">
-          <div className="text results_text">
+          <div className="text results_text" style={{ height: "370px" }}>
             <p className="mainText_emphasis">
               תודה על הערנות ועל הנכונות שלך לעזור!
             </p>
             <p className="mainText">
               לפי סימני האזהרה שסימנת אנחנו מתרשמים שהילד/ה חווה פגיעה וזקוק
-              לעזרה. אנחנו ממליצים לדווח על החשש שלך למוקד הרווחה בהודעת טקסט או
-              בשיחת טלפון
+              לעזרה. <br /> <br />
+              דווח למוקד הרווחה
             </p>
-            <p className="mainText_weak">(שיחת הטלפון יכולה להיות אנונימית)</p>
+
             <a href="tel:*118">
               <p className="saveLife">118*</p>
             </a>
-            <p className="mainText_last">
-              אם יש לך ספקות, חשוב לשתף אותם. באפשרותך להתקשר ולהתייעץ.
-            </p>
-
+            <p className="mainText_weak">(שיחת הטלפון יכולה להיות אנונימית)</p>
             <a href="sms:*118">
               <img className="btn-arrow" src={buttonSms} alt="" />
             </a>
             <a href="tel:*118">
               <img className="btn-arrow" src={buttonCall} alt="" />
             </a>
+
+            <p className="mainText_last">
+              רוצה לדבר עם מישהו ? אפשר להתייעץ <a href="">כאן</a>
+            </p>
           </div>
 
           <div

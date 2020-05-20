@@ -57,7 +57,7 @@ body {
 }
 
 .rectangle-5 .text {
-    height: 278px;
+    /*    height: 278px; */
     line-height: 1.5;
     vertical-align: middle;
     background-image: linear-gradient(239deg, #deedf0 50%, #f9fbff 85%);

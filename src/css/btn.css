@@ -1,8 +1,7 @@
-
 .btn {
   display: flex;
   align-self: center;
-  justify-content: space-between;  
+  justify-content: space-between;
   border-radius: 8px;
   width: 90%;
   height: 59px;

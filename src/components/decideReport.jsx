@@ -34,16 +34,14 @@ class Landing extends Component {
             <div className="rectangle-5">
               <div className="text" style={{ height: "400px" }}>
                 <p className="saveLife">תודה שהחלטת לדווח, זה הדבר הנכון!</p>
-                <p className="mainText">
-                  יש לך אפשרות לדווח למוקד הרווחה בהודעת טקסט או בשיחת טלפון
-                  (שיחת הטלפון יכולה להיות אנונימית)
-                </p>
+                <p className="mainText">דווח למוקד הרווחה</p>
                 <p className="saveLife" style={{ fontSize: "2em" }}>
                   *118
                 </p>
 
                 <img className="btn-arrow" src={buttonSms} alt="" />
                 <img className="btn-arrow" src={buttonCall} alt="" />
+                <p className="mainText">(שיחת הטלפון יכולה להיות אנונימית)</p>
               </div>
 
               <div

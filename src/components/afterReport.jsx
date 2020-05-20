@@ -35,16 +35,15 @@ class Landing extends Component {
           <img src={humans} alt="humans report" />
         </div>
         <div className="rectangle-5">
-          <div className="text results_text" style={{ height: "500px" }}>
+          <div className="text results_text" style={{ height: "420px" }}>
             <p className="saveLife mainText_emphasis">
-              עשית צעד חשוב שאינו מובן מאליו, כל הכבוד!
+              המידע שקראת באתר גרם לך לאי נוחות ?
             </p>
             <p className="mainText">
-              אם חלק מהשאלות גרמו לך לאי נוחות, כדאי לפנות לקבלת תמיכה מחבר/ה,
-              מקרוב/ת משפחה או מגורם מקצועי
+              כדאי לפנות לקבלת תמיכה מחבר/ה, מקרוב/ת משפחה או מגורם מקצועי
             </p>
             <p className="saveLife">הכי חשוב לא להתמודד עם זה לבד.</p>
-            <p className=" mainText_weak">(שיחת הטלפון יכולה להיות אנונימית)</p>
+
             <p className="saveLife">*118</p>
 
             <a href="sms:*118">
