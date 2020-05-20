@@ -32,7 +32,7 @@ class Landing extends Component {
               <img src={humans} alt="humans report" />
             </div>
             <div className="rectangle-5">
-              <div className="text">
+              <div className="text" style={{ height: "400px" }}>
                 <p className="saveLife">תודה שהחלטת לדווח, זה הדבר הנכון!</p>
                 <p className="mainText">
                   יש לך אפשרות לדווח למוקד הרווחה בהודעת טקסט או בשיחת טלפון
