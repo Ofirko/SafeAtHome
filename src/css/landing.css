@@ -15,12 +15,12 @@ body {
 
 .humaaans-copy {
     position: relative;
-    top: 20px;
+    top: 22px;
     display: flex;
     justify-content: center;
 }
 
-.humaaans-copy img {
+.humaaans-copy .humaaans_meet {
     height: 100%;
     width: 240px;
 }

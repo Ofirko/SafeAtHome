@@ -1,16 +1,21 @@
-.btn-quest {
+
+.btn {
+  display: flex;
+  align-self: center;
+  justify-content: space-between;  
   border-radius: 8px;
-  box-shadow: 0 11px 26px -10px rgba(38, 215, 200, 0.46);
-  background-color: #312fd8;
-  width: 80%;
+  width: 90%;
   height: 59px;
+  box-shadow: 0 11px 26px -10px rgba(38, 215, 200, 0.46);
+  position: absolute;
+  bottom: 26px;
+}
+
+.btn-quest {
+  background-color: #312fd8;
 }
 
 .btn-false {
-  border-radius: 8px;
-  box-shadow: 0 11px 26px -10px rgba(38, 215, 200, 0.46);
-  width: 80%;
-  height: 59px;
   background-color: #c4c4da;
   pointer-events: none;
 
@@ -21,14 +26,16 @@
   font-size: 3em;
   position: relative;
   display: flex;
-  justify-content: flex-end;
+  top: 17px;
+  right: 4px;
 }
 
 .arrow-right {
   font-size: 1em;
   display: flex;
-  justify-content: flex-start;
+  justify-content: flex-end;
   position: relative;
-  bottom: 25px;
+  bottom: 5px;
+  right: 15px;
   color: #ffffff;
 }

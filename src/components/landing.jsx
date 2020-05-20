@@ -24,7 +24,7 @@ class Landing extends Component {
               className="humaaans-copy"
               style={{ margin: "auto", width: "100%" }}
             >
-              <img src={humans} alt="humans report" />
+              <img src={humans} alt="humans report" className="humaaans_meet" />
             </div>
             <div className="rectangle-5">
               <div className="text">

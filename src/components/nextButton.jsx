@@ -1,14 +1,16 @@
 import React, { Component } from "react";
 import "../css/btn.css";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faArrowRight,
-  faArrowCircleLeft,
-} from "@fortawesome/free-solid-svg-icons";
+import BackIcon from "../assets/button-back.svg";
+import NextIconDisabled from "../assets/button-arrow.svg";
+import NextIconEnabled from "../assets/button-arrow-enabled.svg";
+// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+// import {
+//   faArrowRight,
+//   faArrowCircleLeft,
+// } from "@fortawesome/free-solid-svg-icons";
 
 class NextButton extends Component {
   state = {
-    isChose: false,
     matchClass: "",
   };
 
@@ -19,26 +21,22 @@ class NextButton extends Component {
   render() {
     const { routingNext, routingPrevious } = this.props;
     return (
-      <div className="row">
-        <div className="col col-md-6">
           <button
-            className={this.state.isChose ? "btn btn-quest" : "btn btn-false"}
+            className={this.props.isChosen ? "btn btn-quest" : "btn btn-false"}
           >
             <span
               className="arrow-left"
-              onClick={() => this.passNextComponent(routingNext)}
+              onClick={() => this.passNextComponent(routingPrevious)}
             >
-              <FontAwesomeIcon icon={faArrowCircleLeft} />
+              <img src={BackIcon} />
             </span>
             <span
               className="arrow-right"
-              onClick={() => this.passNextComponent(routingPrevious)}
+              onClick={() => this.passNextComponent(routingNext)}
             >
-              <FontAwesomeIcon icon={faArrowRight} />
+            <img src={this.props.isChosen ? NextIconEnabled : NextIconDisabled} />
             </span>
           </button>
-        </div>
-      </div>
     );
   }
 }
