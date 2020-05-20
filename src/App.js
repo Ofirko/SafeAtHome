@@ -10,21 +10,22 @@ import Result from "./components/result";
 import DecideReport from "./components/decideReport";
 import AfterReport from "./components/afterReport";
 import AnswerFromSystem from "./components/answerFromSystem";
+import IsItFamily from "./components/isItFamily";
+import SymptomsScreening from "./components/symptomsScreening";
 
 function App() {
   return (
     <div className="App">
       <header className="App-header"></header>
       <body>
-<<<<<<< HEAD
-=======
         <img src={logo} alt="logo" className="logo" />
->>>>>>> 27f4cfa819d71b04f1a5745edac5f4f5c9840cf7
         <Router>
           <Switch>
             <Route path="/questionnaire" exact component={Landing} />
             <Route path="/questionnaire/step1" component={FilterQuestion} />
             <Route path="/questionnaire/step2" component={AdultAbuse} />
+            <Route path="/questionnaire/step3" component={IsItFamily} />
+            <Route path="/questionnaire/step4" component={SymptomsScreening} />
             <Route path="/questionnaire/end-questionnaire" component={Result} />
             <Route
               path="/questionnaire/report-welfare"
@@ -35,20 +36,8 @@ function App() {
               component={AfterReport}
             />
             <Route path="/questionnaire/answer" component={AnswerFromSystem} />
-<<<<<<< HEAD
-          </Switch>
-        </Router>
-        <img src={logo} alt="logo" className="logo" />
-        <Router>
-          <Switch>
-            <Route path="/questionnaire" exact component={Landing} />
-            <Route path="/questionnaire/step2" component={AdultAbuse} />
-          </Switch>
-        </Router>
-=======
         </Switch>
       </Router>
->>>>>>> 27f4cfa819d71b04f1a5745edac5f4f5c9840cf7
       </body>
       <footer></footer>
     </div>

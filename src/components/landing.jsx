@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import "bootstrap/dist/css/bootstrap.css";
 import "../css/landing.css";
-import humans from "../images/humaaans-copy.png";
+import humans from "../images/humaaans-copy@3x.png";
 import button from "../images/button-arrow.png";
 
 class Landing extends Component {
@@ -14,12 +14,8 @@ class Landing extends Component {
   render() {
     return (
       <div
-        className="container"
+        className="container "
         style={{
-          height: "100vh",
-          direction: "rtl",
-          margin: "auto",
-          width: "50%",
         }}
       >
         <div className="row">
@@ -28,7 +24,7 @@ class Landing extends Component {
               className="humaaans-copy"
               style={{ margin: "auto", width: "100%" }}
             >
-              <img src={humans} alt="humans report" />
+              <img src={humans} alt="humans report" className="humaaans_meet" />
             </div>
             <div className="rectangle-5">
               <div className="text">

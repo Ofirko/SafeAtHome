@@ -5,21 +5,21 @@ import QueHeader from "./que_header";
 import QueOption from "./que_option";
 import NextButton from "./nextButton";
 class FilterQuestion extends Component {
-  state = {};
-
-  passToAdult=()=>{
-    this.props.history.push("/questionnaire/step2");
+  constructor (props) {
+    super(props)
+    this.state = { isChosen: false }
   }
+    onUpdate () {this.setState({ isChosen: true })};
 
   render() {
     return (
       <>
-        <QueHeader question="למה נכנסת לאפליקציה?" multipleAnswers={true} />
+        <QueHeader question="למה נכנסת לאפליקציה?" multipleAnswers={false} pageNum = {1} />
         <form className="Options_container">
-          <QueOption optionText="ילד/ה שיתף/ה אותי במידע על פגיעה שחווה/תה "/>
-          <QueOption optionText="ראיתי משהו שהדאיג אותי לגבי ילד/ה "/>
-          <QueOption optionText="שיתפו אותי במידע לגבי ילד/ה אחר/ת שייתכן ועבר/ה פגיעה "/>
-          <NextButton />
+          <QueOption optionText="ילד/ה שיתף/ה אותי במידע על פגיעה שחווה/תה " onUpdate={this.onUpdate.bind(this)} />
+          <QueOption optionText="ראיתי משהו שהדאיג אותי לגבי ילד/ה " onUpdate={this.onUpdate.bind(this)} />
+          <QueOption optionText="שיתפו אותי במידע לגבי ילד/ה אחר/ת שייתכן ועבר/ה פגיעה " onUpdate={this.onUpdate.bind(this)} />
+          <NextButton history={this.props.history} routingNext="/questionnaire/step2" routingPrevious="/questionnaire" isChosen={this.state.isChosen} />
         </form>
       </>
     );

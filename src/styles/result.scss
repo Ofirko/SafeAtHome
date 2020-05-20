@@ -1,0 +1,37 @@
+.results{
+    &_container {
+    position: relative;
+    top: -35px;
+    padding: 0;
+    }
+    &_text.text {
+        height: 327px;
+        font-size: 16px;
+        line-height: 22px;
+
+        .mainText {
+            padding: 0px 9px;
+            margin: 0;
+
+            &_emphasis {
+                color: #ff2e55;
+                line-height: 26px;
+                margin: 0;
+                margin-top: 12px;
+            }
+
+            &_weak {
+                font-size: 14px;
+            }
+
+            &_last {
+                margin-bottom: 15px;
+            }
+        }
+
+        .saveLife {
+            font-size: 20px;
+            padding: 5px;
+        }
+    }
+}

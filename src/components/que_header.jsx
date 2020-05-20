@@ -15,7 +15,7 @@ class QueHeader extends Component {
                     {this.props.question }
                 </h2>
                      {this.props.multipleAnswers ? <h3>(בחר את התשובות שנכונות עבורך)</h3> : null }
-                <ProgressBar pageNum = {1} />
+                <ProgressBar pageNum = {this.props.pageNum} />
             </div>
         );
     }
