@@ -2,8 +2,8 @@ import React, { Component } from "react";
 import "../styles/que_option.scss";
 
 class QueOption extends Component {
-  update () {
-    this.props.onUpdate({chosen: true})
+  update() {
+    this.props.onUpdate({ chosen: true });
   }
   render() {
     return (
