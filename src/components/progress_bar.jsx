@@ -15,7 +15,7 @@ class ProgressBar extends Component {
           className="btn-question"
           src={icon}
           alt=""
-          style={{ width: "20px", position: "relative", bottom: "25px" }}
+          style={{ width: "20px", position: "relative", bottom: "45px" }}
         />
         <div className="ProgressBar_text_container">
           <label className="ProgressBar_text_markers">
