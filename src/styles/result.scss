@@ -1,7 +1,7 @@
 .results{
     &_container {
     position: relative;
-    top: -35px;
+    top: -45px;
     padding: 0;
     }
     &_text.text {
@@ -12,7 +12,7 @@
         .mainText {
             padding: 0px 9px;
             margin: 0;
-
+            
             &_emphasis {
                 color: #ff2e55;
                 line-height: 26px;
@@ -25,12 +25,18 @@
             }
 
             &_last {
+                font-size: 13px;
+                line-height: 19px;
                 margin-bottom: 15px;
+            }
+            &_lastTwo {
+                top: -30px;
+                position: relative;
             }
         }
 
         .saveLife {
-            font-size: 20px;
+            font-size: 24px;
             padding: 5px;
         }
     }

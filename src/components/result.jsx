@@ -24,7 +24,7 @@ class Result extends Component {
           />
         </div>
         <div className="rectangle-5">
-          <div className="text results_text" style={{ height: "370px" }}>
+          <div className="text results_text">
             <p className="mainText_emphasis">
               תודה על הערנות ועל הנכונות שלך לעזור!
             </p>
@@ -37,15 +37,14 @@ class Result extends Component {
             <a href="tel:*118">
               <p className="saveLife">118*</p>
             </a>
-            <p className="mainText_weak">(שיחת הטלפון יכולה להיות אנונימית)</p>
             <a href="sms:*118">
-              <img className="btn-arrow" src={buttonSms} alt="" />
+              <img className="btn-emphasis" src={buttonSms} alt="" />
             </a>
             <a href="tel:*118">
-              <img className="btn-arrow" src={buttonCall} alt="" />
+              <img className="btn-emphasis" src={buttonCall} alt="" />
             </a>
-
-            <p className="mainText_last">
+            <p className="mainText_lastTwo  mainText_weak">(שיחת הטלפון יכולה להיות אנונימית)</p>
+            <p className="mainText_lastTwo mainText_last">
               רוצה לדבר עם מישהו ? אפשר להתייעץ <a href="">כאן</a>
             </p>
           </div>
