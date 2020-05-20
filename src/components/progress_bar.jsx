@@ -17,13 +17,13 @@ class ProgressBar extends Component {
                             שאלות
                         </span>
                         <span>
-                            {this.props.pageNum} מתוך 15
+                            {this.props.pageNum} מתוך 7
                         </span>
                     </label>
                 </div>
-                <progress className = "ProgressBar_indicator_container" value={this.props.pageNum} max="15">
+                <progress className = "ProgressBar_indicator_container" value={this.props.pageNum} max="7">
                 </progress>
-                <div className = "ProgressBar_indicator_oval"  style={{right:this.props.pageNum * 6.67 - 2 + "%"}}>
+                <div className = "ProgressBar_indicator_oval"  style={{right:this.props.pageNum * 14.29 - 2 + "%"}}>
                     <div className = "ProgressBar_indicator_ovalIris"></div>
                 </div>
             </div>

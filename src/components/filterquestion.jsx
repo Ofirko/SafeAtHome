@@ -14,7 +14,7 @@ class FilterQuestion extends Component {
   render() {
     return (
       <>
-        <QueHeader question="למה נכנסת לאפליקציה?" multipleAnswers={false} pageNum = {1} />
+        <QueHeader question="על מה את/ה רוצה להתייעץ? " multipleAnswers={false} pageNum = {1} />
         <form className="Options_container">
           <QueOption optionText="ילד/ה שיתף/ה אותי במידע על פגיעה שחווה/תה " onUpdate={this.onUpdate.bind(this)} />
           <QueOption optionText="ראיתי משהו שהדאיג אותי לגבי ילד/ה " onUpdate={this.onUpdate.bind(this)} />

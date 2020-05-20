@@ -26,8 +26,8 @@ function App() {
             <Route path="/questionnaire" exact component={Landing} />
             <Route path="/questionnaire/step1" component={FilterQuestion} />
             <Route path="/questionnaire/step2" component={AdultAbuse} />
-            <Route path="/questionnaire/step3" component={IsItFamily} />
-            <Route path="/questionnaire/step4" component={SymptomsScreening} />
+            {/* <Route path="/questionnaire/step3" component={IsItFamily} /> */}
+            <Route path="/questionnaire/step3" component={SymptomsScreening} />
             <Route path="/questionnaire/end-questionnaire" component={Result} />
             <Route
               path="/questionnaire/report-welfare"

@@ -9,11 +9,13 @@ class SymptomsScreening extends Component {
   render() {
     return (
       <>
-      <QueHeader question="האם חלק מהסימנים הבאים הקשורים בהתנהגות או בהופעה של הילד מטרידים אותך? " multipleAnswers={false} pageNum = {4}/>
+      <QueHeader question="עד כמה את/ה מרגיש מודאג מהדברים הבאים? " multipleAnswers={false} pageNum = {3}/>
       <form className="Options_container">
-        <QueOption optionText="התעללות על ידי בן משפחה "  onUpdate={this.onUpdate.bind(this)}/>
-        <QueOption optionText="התעללות על ידי מבוגר מחוץ למשפחה "  onUpdate={this.onUpdate.bind(this)}/>
-        <NextButton history={this.props.history} routingNext="/questionnaire/end-questionnaire" routingPrevious="/questionnaire/step3" isChosen={this.state.isChosen} />
+        <QueOption optionText="שינוי קיצוני במצב הרוח של הילד "  onUpdate={this.onUpdate.bind(this)}/>
+        <QueOption optionText="	שינוי קיצוני בתפקוד החברתי 
+(מסוגר, בודד, לא מתקשר עם חברים) "  onUpdate={this.onUpdate.bind(this)}/>
+        <QueOption optionText="שינוי קיצוני בתדירות ההגעה של הילד/ה לפעילות "  onUpdate={this.onUpdate.bind(this)}/>
+        <NextButton history={this.props.history} routingNext="/questionnaire/end-questionnaire" routingPrevious="/questionnaire/step2" isChosen={this.state.isChosen} />
       </form>
     </>
     );

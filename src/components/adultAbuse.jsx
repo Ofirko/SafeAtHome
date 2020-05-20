@@ -9,10 +9,13 @@ class AdultAbuse extends Component {
   render() {
     return (
       <>
-      <QueHeader question="האם קיים חשד להתעללות מצד אדם מבוגר ?" multipleAnswers={false} pageNum = {2}/>
+      <QueHeader question="האם את/ה חושד/ת שיתכן והילד/ה חשוף/ה ל: " multipleAnswers={true} pageNum = {2}/>
       <form className="Options_container">
-        <QueOption optionText="כן, קיים חשד "  onUpdate={this.onUpdate.bind(this)}/>
-        <QueOption optionText="לא מדובר בהתעללות מצד מבוגרים "  onUpdate={this.onUpdate.bind(this)}/>
+        <QueOption optionText="שיימינג ובריונות מצד ילדים אחרים "  onUpdate={this.onUpdate.bind(this)}/>
+        <QueOption optionText="התעללות או הזנחה מצד מבוגר "  onUpdate={this.onUpdate.bind(this)}/>
+        <QueOption optionText="פגיעה מינית "  onUpdate={this.onUpdate.bind(this)}/>
+        <QueOption optionText="פגיעה מילולית "  onUpdate={this.onUpdate.bind(this)}/>
+        <QueOption optionText="פגיעה פיזית, סימני אלימות "  onUpdate={this.onUpdate.bind(this)}/>
         <NextButton history={this.props.history} routingNext="/questionnaire/step3" routingPrevious="/questionnaire/step1" isChosen={this.state.isChosen} />
       </form>
     </>

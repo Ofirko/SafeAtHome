@@ -1,4 +1,57 @@
 .Main {
+    &_container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 20px;
+        margin-top: 30px;
+        padding: 0;
+        overflow: hidden;
+        width: calc(100vw - 60px);
+
+        .mainText {
+            padding: 0;
+            margin: 0;
+            line-height: 26px;
+            font-size: 20px;
+            text-align: center;
+
+            &_emphasis {
+                margin: 0;
+                line-height: 26px;
+                font-size: 20px;
+                color: #ff2e55;
+                padding-bottom: 50px;
+
+            }
+
+            &_weak {
+                font-size: 14px;
+            }
+
+            &_last {
+                margin-bottom: 15px;
+            }
+        }
+
+        .saveLife {
+            font-size: 20px;
+            padding: 5px;
+        }
+
+        .humaaans-copy {
+            position: absolute;
+            top: 22%;
+            left: -8%;
+            img {
+                width: 100%;
+                height: 285px;
+            }
+        }
+    }
+
+
     &_Button {
         color: white;
         &Primary {
@@ -9,6 +62,7 @@
             background-color: rgb(255, 46, 85);
             border: 9px solid  #ffdbe2;
             border-radius: 50%;
+            margin-bottom: 20px;
         }
         &Secondary {
             width: 240px;
@@ -16,20 +70,23 @@
             font-size: 22px;
             line-height: 1;
             white-space: nowrap;
-            margin: 12px 0px;
+            margin: 4px 0px;
             border: solid 8px rgba(93, 112, 241, 0.2);
             border-radius: 50px;
 
             &.rebecca {
                 background-color: #f093ed;
+                border-color:  #fce9fb;
             }
 
             &.blue {
                 background-color: #5d70f1;
+                border-color: #dfe2fc;
             }
 
             &.coral {
                 background-color: #13b7e4;
+                border-color: #d0f1fa;
             }
         }
     }
