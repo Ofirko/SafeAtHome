@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="77px" viewBox="0 0 77 77" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>Group 7</title>
+    <defs>
+        <circle id="path-1" cx="38.5" cy="27.5" r="22.5"></circle>
+        <filter x="-65.6%" y="-41.1%" width="231.1%" height="231.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feMorphology radius="5" operator="erode" in="SourceAlpha" result="shadowSpreadOuter1"></feMorphology>
+            <feOffset dx="0" dy="11" in="shadowSpreadOuter1" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="13" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.752941176   0 0 0 0 0.77254902   0 0 0 0 0.823529412  0 0 0 1 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="to-consult_3" transform="translate(-18.000000, -584.000000)">
+            <g id="panel" transform="translate(186.500000, 621.500000) scale(-1, 1) translate(-186.500000, -621.500000) translate(18.000000, 582.000000)">
+                <g id="Button-arrow" transform="translate(260.000000, 2.000000)">
+                    <g id="Group-7">
+                        <g id="Oval-3">
+                            <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+                        </g>
+                        <path d="M43.93,28.379965 C43.91,28.414965 43.89,28.443965 43.87,28.479965 C43.8355999,28.5498847 43.7918673,28.6148108 43.74,28.672965 C43.7062034,28.7042432 43.669352,28.7320493 43.63,28.755965 L41.07,32.547965 C40.7178716,33.0151258 40.0810766,33.1618839 39.56,32.895965 C39.3127663,32.8002192 39.1224395,32.59731 39.0426949,32.3444612 C38.9629503,32.0916124 39.0024299,31.8162258 39.15,31.595965 L40.89,29.012965 L33,29.012965 C32.4477153,29.012965 32,28.5652497 32,28.012965 C32,27.4606802 32.4477153,27.012965 33,27.012965 L40.89,27.012965 L39.15,24.430965 C39.0028191,24.210605 38.9635617,23.93537 39.043266,23.6826489 C39.1229704,23.4299278 39.3130282,23.2270152 39.56,23.130965 C40.0812345,22.8663325 40.7171666,23.0128917 41.07,23.478965 L43.61,27.240965 C43.6263682,27.253772 43.6399747,27.2697597 43.65,27.287965 C43.736182,27.3609727 43.8104127,27.4470128 43.87,27.542965 C43.935523,27.6572657 43.9732068,27.7853908 43.98,27.916965 C43.987791,27.9420883 43.9914162,27.9540516 43.99,27.965965 C43.99,27.981965 44,27.995965 44,28.011965 C44,28.027965 43.99,28.042965 43.99,28.057965 C43.9913912,28.0704921 43.9877993,28.0830637 43.98,28.092965 C43.9735884,28.2082927 43.9568063,28.2955593 43.93,28.379965 Z" id="arrow-right-path" fill="#C0C5D2"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

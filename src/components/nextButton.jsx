@@ -1,13 +1,8 @@
 import React, { Component } from "react";
 import "../css/btn.css";
 import BackIcon from "../assets/button-back.svg";
-import NextIconDisabled from "../assets/button-arrow.svg";
+import NextIconDisabled from "../assets/errow-grey.svg";
 import NextIconEnabled from "../assets/button-arrow-enabled.svg";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faArrowRight,
-//   faArrowCircleLeft,
-// } from "@fortawesome/free-solid-svg-icons";
 
 class NextButton extends Component {
   state = {
