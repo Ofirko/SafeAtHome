@@ -1,0 +1,36 @@
+.Main {
+    &_Button {
+        color: white;
+        &Primary {
+            width: 226px;
+            height: 226px;
+            font-size: 28px;
+            padding: 25px;
+            background-color: rgb(255, 46, 85);
+            border: 9px solid  #ffdbe2;
+            border-radius: 50%;
+        }
+        &Secondary {
+            width: 240px;
+            height: 44px;
+            font-size: 22px;
+            line-height: 1;
+            white-space: nowrap;
+            margin: 12px 0px;
+            border: solid 8px rgba(93, 112, 241, 0.2);
+            border-radius: 50px;
+
+            &.rebecca {
+                background-color: #f093ed;
+            }
+
+            &.blue {
+                background-color: #5d70f1;
+            }
+
+            &.coral {
+                background-color: #13b7e4;
+            }
+        }
+    }
+}

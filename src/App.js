@@ -12,6 +12,7 @@ import AfterReport from "./components/afterReport";
 import AnswerFromSystem from "./components/answerFromSystem";
 import IsItFamily from "./components/isItFamily";
 import SymptomsScreening from "./components/symptomsScreening";
+import MainPage from "./components/mainPage";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <img src={logo} alt="logo" className="logo" />
         <Router>
           <Switch>
+            <Route path="/" exact component={MainPage} />
             <Route path="/questionnaire" exact component={Landing} />
             <Route path="/questionnaire/step1" component={FilterQuestion} />
             <Route path="/questionnaire/step2" component={AdultAbuse} />
