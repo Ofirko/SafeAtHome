@@ -1,12 +1,12 @@
-import React, { Component } from 'react';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import PropTypes from "prop-types";
 import "../styles/progress_bar.scss";
+import icon from "../images/icon-question.png";
 
 class ProgressBar extends Component {
-    constructor(props) {
-        super(props);
-        
-    }
+  constructor(props) {
+    super(props);
+  }
 
     render() {
         return (
